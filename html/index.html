@@ -15,77 +15,38 @@
        <h1>Calculadora</h1>
        <p id="resultado"></p>
                
-               
-          <table>
-          <tr>
-   <td><Button class="botão"onclick="clean()">C</Button></td>     <td><Button class="botão"onclick="insert('MRC')">MRC</Button></td>
-   <td><Button class="botão"onclick="insert('M+')">M+</Button></td>    <td><Button class="botão"onclick="insert('%')">%</Button></td>
+   <table>  <tr>  <td><Button class="botão"onclick="clean()">C</Button></td>  
+   <td><Button class="botão"onclick="insert('MRC')">MRC</Button></td>
+
+ <td><Button class="botão"onclick="insert('M+')">M+</Button></td>   
+    <td><Button class="botão"onclick="insert('%')">%</Button></td>
           </tr>
 
           <tr>
     <td><Button class="botão"onclick="insert('7')">7</Button></td>
       <td><Button class="botão"onclick="insert('8')">8</Button></td>
-     <td><Button class="botão"onclick="insert('9')">9</Button></td>
-           <td><Button class="botão"onclick="insert('/')">/</Button></td>
-           </tr>
-
-           <tr>
-      <td><Button class="botão"onclick="insert('4')">4</Button></td>
-    <td><Button class="botão"onclick="insert('5')">5</Button></td>
+     <td><Button class="botão"onclick="insert('9')">9</Button></td>          <td><Button class="botão"onclick="insert('/')">/</Button></td>
+       </tr>
+       
+   <tr>  <td><Button class="botão"onclick="insert('4')">4</Button></td>  <td><Button class="botão"onclick="insert('5')">5</Button></td>
      <td><Button class="botão"onclick="insert('6')">6</Button></td>
-    <td><Button class="botão">x</Button></td>
-           </tr>
-
-           <tr>
-   <td><Button class="botão"onclick="insert('1')">1</Button></td>
-    <td><Button class="botão"onclick="insert('2')">2</Button></td>
- <td><Button class="botão" onclick="insert('3') ">3</Button></td>
-     <td><Button class="botão"onclick="insert('-')">-</Button></td>
+    <td><Button class="botão"onclick="insert('*')">x</Button></td>
+        
+  </tr>   <tr>   <td><Button class="botão"onclick="insert('1')">1</Button></td> 
+      <td><Button class="botão"onclick="insert('2')">2</Button></td>    <td><Button class="botão" onclick="insert('3')">3</Button></td>    <td><Button class="botão"onclick="insert('-')">-</Button></td>
           </tr>
 
           <tr>
-     <td><Button class="botão"onclick="insert('0')">0</Button></td>
-    <td><Button class="botão"onclick="insert(.)>">.</Button></td>
-     <td><Button class="botão"onclick="calcular()">=</Button></td>
-   <td><Button class="botão"onclick="insert('+')">+</Button></td>
+     <td><Button class="botão"onclick="insert('0')">0</Button></td>   <td><Button class="botão"onclick="insert(.)>">.</Button></td>
+     <td><Button class="botão"onclick="calcular()">=</Button></td>  <td><Button class="botão"onclick="insert('+')">+</Button></td>
           </tr>
-
-        </table>
+       </table>
 
 
 </div>
 </div>
 
-<script>
-
-function insert(num)
-{
-document.getElementById('resultado').innerHTML= num;
-}
-
-function clean()
-{
-document.getElementById('resultado').innerHTML= "";
-}
-
-function calcular()
-{
-
-    
-}
-
-var resultado =document.getElementById('resultado').innerHTML; if (resultado)
-{
-document.getElementById('resultado').innerHTML= eval(resultado);
-
-}
-
-else
-{
-document.getElementById('resultado').innerHTML= "nada para..."
-}
-</script>
-
+<script src="index.js"></script>
     
 </body>
 </html>
